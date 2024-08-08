@@ -1,0 +1,136 @@
+/* Reset geral e estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do body */
+body {
+    background-color: rgb(2, 30, 30);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #f0f0f0;
+}
+
+/* Estilização do h1 */
+h1 {
+    color: #f0f0f0;
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+/* Estilização do board do Sudoku */
+#sudoku-board {
+    display: grid;
+    grid-template: repeat(9, 40px) / repeat(9, 40px);
+    gap: 1px;
+}
+
+/* Estilização dos inputs */
+input {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.125rem; /* 18px */
+}
+
+input:focus {
+    outline: none;
+}
+
+input[data-fixed="true"] {
+    background-color: #f0f0f0;
+}
+
+/* Estilização dos botões */
+button {
+    background-color: rgb(35, 145, 13);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1.25rem; /* 20px */
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(25, 115, 10);
+}
+
+/* Estilização da navbar */
+.navbar {
+    background-color: #90ee90;
+    color: #004D40;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Estilização do logo na navbar */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Estilização da área de informações do usuário */
+.user-info {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    width: 25px;
+    height: auto;
+    margin-left: 10px;
+}
+
+/* Ajuste do conteúdo principal */
+.main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
+    margin-top: 4rem; /* Para compensar o espaço ocupado pela navbar */
+    gap: 2rem; /* Espaço entre o Sudoku e o texto */
+}
+
+/* Estilização do #sudoku-description */
+#sudoku-description {
+    max-width: 300px;
+    text-align: center;
+    padding:50px ;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.5;
+    left: 50PX;
+    top: 120px;
+   
+}
+
+/* Estilização do footer */
+.footer {
+    background-color: #90ee90;
+    color: #004D40;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}

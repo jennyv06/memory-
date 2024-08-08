@@ -1,0 +1,102 @@
+/* Reseta as margens e paddings e define box-sizing para border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define a cor de fundo para toda a página */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #023030; /* Cor de fundo suave para a página */
+}
+
+/* Estiliza a barra de navegação */
+.navbar {
+    background-color: #90ee90;
+    color: black;
+    text-align: center;
+    height: 60px; /* Mais espaço visual */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ddd; /* Borda sutil para separação */
+}
+
+/* Estiliza a seção sobre */
+.sobre {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    background-color: #023030; /* Cor de fundo diferente para a seção */
+    color: white;
+    text-align: center; /* Centraliza o texto */
+}
+
+.box-background {
+    background-color: #ffffff; /* Cor de fundo para a caixa */
+    color: #023030; /* Cor do texto dentro da caixa */
+    padding: 1.5rem; /* Reduzido para diminuir o tamanho do box */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para efeito de profundidade */
+    max-width: 600px; /* Diminuído para uma largura menor */
+    width: 100%; /* Largura total do container pai, mas limitada pelo max-width */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estiliza o rodapé */
+.footer {
+    background-color: #90ee90;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ddd; /* Borda sutil para separação */
+}
+
+/* Estiliza os botões */
+button {
+    background-color: #90ee90;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+/* Adiciona efeito de hover aos botões */
+button:hover {
+    background-color: #76e576;
+    transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+}
+
+/* Estiliza os cabeçalhos e parágrafos */
+h1, h2, p {
+    margin: 0.5rem 0;
+}
+
+/* Adiciona espaçamento para melhorar a legibilidade */
+h1 {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.6; /* Melhora a legibilidade dos parágrafos */
+}

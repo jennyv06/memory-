@@ -1,0 +1,100 @@
+/* Reseta as margens e paddings e define box-sizing para border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #e0f2f1; /* Cor de fundo suave para a página */
+}
+
+/* Estiliza a barra de navegação */
+.navbar {
+    background-color: #90ee90;
+    color: black;
+    padding: 0;
+    text-align: center;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estiliza o conteúdo principal */
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #023030; /* Cor de fundo da área principal */
+}
+
+/* Estiliza o container de jogos */
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta as colunas para responsividade */
+    gap: 1rem; /* Espaço entre os boxes */
+}
+
+/* Estiliza cada item de jogo */
+.game-item {
+    background-color: #90ee90;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Bordas arredondadas mais suaves */
+    padding: 1.5rem; /* Reduzido para mais espaço interno */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para efeito de profundidade */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    min-width: 250px; /* Largura mínima ajustada */
+    min-height: 200px; /* Altura mínima ajustada */
+}
+
+/* Adiciona efeito de hover aos itens de jogo */
+.game-item:hover {
+    background-color: #75ec75;
+    border: 1px solid #66cc66; /* Borda mais destacada no hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Aumenta a sombra no hover */
+}
+
+/* Estiliza o rodapé */
+.footer {
+    background-color: #90ee90;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #ddd; /* Borda sutil para separação */
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para efeito de profundidade */
+}
+
+/* Estiliza os botões */
+button {
+    background-color: #023030; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo específico para o botão de home */
+.button-home {
+    background-color: #90ee90;
+    color: black;
+}
+
+/* Adiciona efeito de hover aos botões */
+button:hover {
+    background-color: #76e576; /* Cor mais clara no hover */
+}

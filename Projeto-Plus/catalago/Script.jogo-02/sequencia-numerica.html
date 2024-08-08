@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory+</title>
+    <link rel="stylesheet" href="sequencia-numerica.css">
+    <script src="sequencianumerica.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Memory+</div>
+        <div class="user-info">
+            Olá, fulano 
+            <img class="user-icon" src="https://cdn-icons-png.flaticon.com/512/2815/2815428.png" alt="Ícone do Usuário">
+        </div>
+    </header>
+    
+    <main class="main-content">
+        <div class="ranking-container">
+            <aside class="ranking">
+                <h3>Ranking</h3>
+                <ul>
+                    <li>👑 Gabriella</li>
+                    <li>@Jennifer</li>
+                    <li>@Marcos</li>
+                    <li>@Ismael</li>
+                    <li>@Victor</li>
+                    <li>@Elias</li>
+                </ul>
+            </aside>
+        </div>
+        
+        <div class="game-container">
+            <div class="sequence-section">
+                <h2>Sequência Numérica</h2>
+                <div id="number-display">** *** ***</div>
+                <button id="generate-number">Gerar Sequência</button>
+                <input type="text" id="user-input" placeholder="Digite os números que você lembra na ordem" disabled />
+                <button id="check-number" disabled>Continuar Sequência</button>
+                <div id="result"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Memory+. Todos os direitos reservados.</p>
+    </footer>
+    
+   
+</body>
+</html>
